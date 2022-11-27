@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -25,6 +26,8 @@
         <a href="#">
           <img src="images/logo.svg" alt="Shortly logo">
         </a>
+      </div>
+      <div class="nav-right">
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li><a class="main-nav-link" href="#">Features</a></li>
@@ -32,11 +35,19 @@
             <li><a class="main-nav-link" href="#">Resources</a></li>
           </ul>
         </nav>
+        <div class="nav-signup-container">
+          <a class="main-nav-link" href="#">Login</a>
+          <a class="btn btn-nav" href="#">Sign up</a>
+        </div>
       </div>
-      <div class="nav-right">
-        <a class="main-nav-link" href="#">Login</a>
-        <a class="btn btn-nav" href="#">Sign up</a>
-      </div>
+      <button class="btn-mobile-nav">
+        <svg class="mobile-icon" name="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg class="mobile-icon" name="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>                
+      </button>
     </div>
 
   </header>
@@ -176,8 +187,8 @@
   <script type="module" src="js/script.js"></script>
     
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/khagonia">Kaiguu</a>.
   </div>
 </body>
 </html>

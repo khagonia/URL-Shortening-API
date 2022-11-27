@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 4px solid hsl(180, 66%, 49%);
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -26,7 +30,7 @@ body {
   font-size: 1.8rem;
   line-height: 1;
   
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 p {
@@ -98,7 +102,8 @@ p {
 
 .header-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 10fr 90fr;
+  gap: 4.8rem;
 }
 
 .nav-left,
@@ -113,13 +118,22 @@ p {
 }
 
 .nav-right {
-  justify-self: right;
+  justify-content: space-between;
+}
+
+.nav-signup-container {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.nav-right a {
+  margin-bottom: 1.2rem;
 }
 
 .main-nav {
   margin-bottom: 1rem;
 }
-
 
 .main-nav-list {
   display: flex;
@@ -145,7 +159,25 @@ p {
   color: hsl(255, 11%, 22%);
 }
 
+.btn-mobile-nav {
+  border: 0;
+  background: none;
+  display: none;
+}
 
+.mobile-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  stroke: hsl(257, 7%, 63%);
+}
+
+.mobile-icon[name=menu-icon] {
+  display: block;
+}
+
+.mobile-icon[name=close-icon] {
+  display: none;
+}
 
 /*************************/
 /* HERO SECTION
@@ -228,10 +260,6 @@ p {
   width: 100%;
 }
 
-.shorten-input:focus {
-  outline: 4px solid hsl(180, 66%, 49%);
-}
-
 .btn-shorten {
   border: 0;
   padding: 2rem 4.8rem;
@@ -276,6 +304,8 @@ p {
 .link,
 .shortlink {
   font-size: 1.9rem;
+  white-space: wrap;
+  word-break: break-all;
 }
 
 .link {

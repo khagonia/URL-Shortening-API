@@ -7,12 +7,11 @@ export default class FormValidator {
 
     this.form.addEventListener('submit', e => {
       e.preventDefault()
-
       if(!this.hasErrors) {
-        this.formHandler(this.form)
+        this.formHandler ? this.formHandler(this.form) : this.form.submit()
       } else {
-        form.querySelector('.error-message').textContent = "Please enter a link"
-        form.querySelector('#url').classList.add('error-outline')
+        this.form.querySelector('.error-message').textContent = "Please enter a link"
+        this.form.querySelector('#url').classList.add('error-outline')
       }      
     })
   }
