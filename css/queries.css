@@ -296,6 +296,8 @@
 
   .section-shorten .container {
     padding-top: 0;
+    padding-bottom: 0;
+
   }
 
   .shorten-container form {
@@ -330,7 +332,13 @@
     grid-row: 3 / 4;
   }
 
+  .section-feature {
+    padding-top: 0;
+  }
 
+  .section-feature .container{
+    padding-top: 0;
+  }
 }
 
 
